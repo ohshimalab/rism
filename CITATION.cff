@@ -1,0 +1,38 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite the ICADL 2026 paper below."
+type: software
+title: "Retrieving Instance Segmentation Models using Local Image Features via Transformer Encoder"
+authors:
+  - family-names: Pham
+    given-names: Huu-Long
+  - family-names: Kubouchi
+    given-names: Masataka
+  - family-names: Nishimoto
+    given-names: Takuma
+  - family-names: Yamamoto
+    given-names: Takehiro
+  - family-names: Ohshima
+    given-names: Hiroaki
+repository-code: "https://github.com/ohshimalab/rism"
+url: "https://github.com/ohshimalab/rism"
+license: MIT
+preferred-citation:
+  type: conference-paper
+  title: "Retrieving Instance Segmentation Models using Local Image Features via Transformer Encoder"
+  authors:
+    - family-names: Pham
+      given-names: Huu-Long
+    - family-names: Kubouchi
+      given-names: Masataka
+    - family-names: Nishimoto
+      given-names: Takuma
+    - family-names: Yamamoto
+      given-names: Takehiro
+    - family-names: Ohshima
+      given-names: Hiroaki
+  collection-title: "Proceedings of the International Conference on Asian Digital Libraries (ICADL 2026)"
+  collection-type: "Lecture Notes in Computer Science"
+  volume: 17297
+  publisher:
+    name: Springer
+  year: 2026

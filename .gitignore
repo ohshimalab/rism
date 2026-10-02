@@ -1,0 +1,15 @@
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+build/
+dist/
+data/
+outputs/
+checkpoints/
+lightning_logs/
+*.ckpt
+*.pth
+.venv/
+.cache/
+*.npz

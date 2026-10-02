@@ -1,0 +1,44 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "rism"
+version = "0.1.0"
+description = "Instance segmentation model retrieval with local ViT features"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+authors = [
+  {name = "Huu-Long Pham"}, {name = "Masataka Kubouchi"},
+  {name = "Takuma Nishimoto"}, {name = "Takehiro Yamamoto"}, {name = "Hiroaki Ohshima"},
+]
+keywords = ["model retrieval", "instance segmentation", "transformer", "learning to rank", "ICADL"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent",
+]
+dependencies = [
+  "torch>=2.2", "torchvision>=0.17", "transformers>=4.40", "lightning>=2.2",
+  "pandas>=2.0", "numpy>=1.26", "typer>=0.12", "tqdm>=4.66",
+  "pillow>=10", "matplotlib>=3.8",
+]
+
+[project.urls]
+Homepage = "https://github.com/ohshimalab/rism"
+Repository = "https://github.com/ohshimalab/rism"
+
+[project.optional-dependencies]
+baselines = ["lightly>=1.5"]
+dev = ["pytest>=8"]
+
+[project.scripts]
+rism = "rism.cli:app"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
